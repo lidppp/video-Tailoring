@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video Tailoring</title>
+  <script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div id="videobox">
+    <video id="videoshow"></video>
+    <div id="controlbox">
+      <div id="control_top">
+        <div class="shor"></div>
+        <div class="dot start" title="开始"></div>
+        <div class="dot end" title="结束"></div>
+      </div>
+      <div id="control_bottom">
+        <div class="play">播放</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <input type="file" id="video" onchange="jsReadFiles(this.files)">
+    <br>
+    开始 <input type="text">
+    <br>
+    结束 <input type="text">
+  </div>
+
+</body>
+<script src="js/index.js">
+
+</script>
+
+</html>
