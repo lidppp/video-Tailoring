@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>video Tailoring</title>
   <script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.js"></script>
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="/public/css/index.css">
 </head>
 
 <body>
   <div id="videobox">
-    <video id="videoshow"></video>
+    <video id="videoshow"  ></video>
     <div id="controlbox">
       <div id="control_top">
         <div class="shor"></div>
@@ -24,15 +24,17 @@
     </div>
   </div>
   <div>
-    <input type="file" id="video" onchange="jsReadFiles(this.files)">
+    <input type="file" id="video" name="video" onchange="jsReadFiles(this.files)">
     <br>
-    开始 <input type="text">
+    开始 <input id="starInput" name="star" type="text">秒
     <br>
-    结束 <input type="text">
+    结束 <input id="endInput" name="end" type="text">秒
   </div>
 
+
+  <button onclick="upload()">上传</button>
 </body>
-<script src="js/index.js">
+<script src="/public/js/index.js">
 
 </script>
 
