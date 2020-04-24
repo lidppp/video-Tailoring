@@ -102,7 +102,6 @@ app.get('/download', (req, res) => {
 // 开始监听
 app.listen(3000, function () {
     console.log("服务启动")
-    console.log(path.join(__dirname, '/upload/'))
 })
 
 
