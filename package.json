@@ -1,0 +1,25 @@
+{
+  "name": "video-Tailoring",
+  "version": "1.0.0",
+  "description": "不管你是zip下载下来的,还是git clone下来的 我默认本项目就是一个文件夹了  \r 首先你得拥有node的运行环境(本人的运行环境为10.16.0)   \r 在你的刚下载下来的文件夹中,打开cmd(命令行工具,windows可以直接在文件夹路径处打cmd然后按回车)执行`npm install `下载运行所依赖的包  \r 当下载完成没有error后,执行`node index,js`  \r 当控制台中打印`服务启动`字样后,访问`localhost:3000`即可看到丑陋的前端页面  \r 剩下的功能怎么使用自己琢磨把,有时间我再详细写写  \r ### 网站前端 + nodejs实现视频在线裁剪\r ### 使用技术架构\r + 前端(目前前端样式没有优化,比较丑,emmmm,有时间去好好写写样式)\r   - HTML + CSS + JS + jQuery\r   - 前端部分剩余浏览器窗口发生改变进度条自动适应,input的值发生改变进度条自动适应,样式优化\r + 后端\r   - node.js + express + fluent-ffmpeg \r ### 注意事项\r > 需要本地下载 `ffmpeg` 并且配置环境变量 具体自行百度一抓一大把",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidppp/video-Tailoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lidppp/video-Tailoring/issues"
+  },
+  "homepage": "https://github.com/lidppp/video-Tailoring#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "multer": "^1.4.2"
+  }
+}
